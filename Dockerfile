@@ -23,6 +23,12 @@ RUN wget https://water.usgs.gov/water-resources/software/MODPATH/modpath_7_2_001
     && make \
     && mv mpath7gf.mac /usr/bin/mpath7
 
+ARG NB_USER=jovyan
+ARG NB_UID=1000
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
 COPY . ${HOME}
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
