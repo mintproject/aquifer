@@ -1,7 +1,9 @@
 FROM jupyter/scipy-notebook
 
+USER root
+
 RUN apt-get update \
-    && apt-get install -y \
+    &&  apt-get install -y \
         wget \
         zip \
         build-essential \
@@ -22,3 +24,5 @@ RUN wget https://water.usgs.gov/water-resources/software/MODPATH/modpath_7_2_001
     && make \
     && mv mpath7gf.mac /usr/bin/mpath7
 
+USER $NB_UID
+RUN pip install flopy
