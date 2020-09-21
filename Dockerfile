@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/scipy-notebook:a80a324d6edd
 
 USER root
 
@@ -24,5 +24,7 @@ RUN wget https://water.usgs.gov/water-resources/software/MODPATH/modpath_7_2_001
     && make \
     && mv mpath7gf.mac /usr/bin/mpath7
 
-USER $NB_UID
+COPY . ${HOME}
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
 RUN pip install flopy pyvista
