@@ -25,4 +25,4 @@ RUN wget https://water.usgs.gov/water-resources/software/MODPATH/modpath_7_2_001
     && mv mpath7gf.mac /usr/bin/mpath7
 
 USER $NB_UID
-RUN pip install flopy
+RUN pip install flopy pyvista
