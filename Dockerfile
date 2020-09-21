@@ -15,16 +15,16 @@ ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
+ENV WORKDIR $HOME/work
 
 
-COPY . ${HOME}
-WORKDIR ${HOME}
-RUN pushd pymake \
-    && pip install https://github.com/modflowpy/pymake/zipball/master \
-    && python make_mf2005.py  --fflags='-O3' \
-    && python make_mt3dms.py   --fflags='-O3' \
-    && popd
-
+COPY . ${WORKDIR}
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
+
+WORKDIR ${WORKDIR}
+RUN  pip install https://github.com/modflowpy/pymake/zipball/master \
+    && python pymake/make_mf2005.py  --fflags='-O3' \
+    && python pymake/make_mt3dms.py  --fflags='-O3' 
+
 RUN pip install flopy pyvista
