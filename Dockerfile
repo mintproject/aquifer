@@ -8,21 +8,6 @@ RUN apt-get update \
         build-essential \
         gfortran
 
-RUN wget https://water.usgs.gov/ogw/modflow/MODFLOW-2005_v1.12.00/MF2005.1_12u.zip \
-    && unzip MF2005.1_12u.zip \
-    && mv MF2005.1_12u mf2005 \
-    && cd mf2005/make \
-    && make \
-    && mv mf2005 /usr/bin/
-
-
-RUN wget https://water.usgs.gov/water-resources/software/MODPATH/modpath_7_2_001.zip \
-    && unzip modpath_7_2_001.zip \
-    && cd modpath_7_2_001/make \
-    && mv makefile-gfortran-mac Makefile \
-    && make \
-    && mv mpath7gf.mac /usr/bin/mpath7
-
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
