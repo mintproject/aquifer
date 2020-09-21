@@ -1,5 +1,4 @@
-FROM jupyter/scipy-notebook:a80a324d6edd
-
+FROM jupyter/scipy-notebook:612aa5710bf9
 USER root
 
 RUN apt-get update \
