@@ -1,4 +1,0 @@
-jupyter==1.0.0
-matplotlib==3.3.2
-numpy==1.19.2
-pyvista==0.26.0
