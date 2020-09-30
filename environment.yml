@@ -22,5 +22,4 @@ dependencies:
   - pyshp
   - flopy
   - pyvista
-  - ipython2cwl
   - pip
