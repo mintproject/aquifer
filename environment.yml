@@ -20,4 +20,7 @@ dependencies:
   - rasterio>=1.0
   - rasterstats
   - pyshp
+  - flopy
+  - pyvista
+  - ipython2cwl
   - pip
