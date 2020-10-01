@@ -21,7 +21,9 @@ dependencies:
   - rasterstats
   - pyshp
   - flopy
-  - pyvista
   - pip
   - pip:
     - ipython2cwl
+    - piglet
+    - pyvirtualdisplay
+    - pyvista
