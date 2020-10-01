@@ -23,5 +23,5 @@ dependencies:
   - flopy
   - pyvista
   - pip
-  pip:
+  - pip:
     - ipython2cwl
