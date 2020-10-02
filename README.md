@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/297420240.svg)](https://zenodo.org/badge/latestdoi/297420240)
+
 # MODFLOW aquifer
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mosoriob/aquifer/master?filepath=main_ERC.ipynb)
 
