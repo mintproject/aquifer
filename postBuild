@@ -2,5 +2,5 @@
 
 curl -L -o linux.zip https://github.com/MODFLOW-USGS/executables/releases/download/3.0/linux.zip?raw=true
 mkdir binaries
-unzip linux.zip -d binaries
+unzip linux.zip -d /usr/local/bin/
 rm linux.zip
