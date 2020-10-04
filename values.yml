@@ -1,0 +1,21 @@
+case: 2
+conc: 30
+contaminant_transport_list:
+        class: File
+        path: "file1.png"
+aquifer_file:
+        class: File
+        location: 'aquifer.ftl'
+degr: "0.5"
+aquifer_file_case2:
+        class: File
+        location: 'aquifer2'
+aquifer_file_case1:
+        class: File
+        location: 'aquifer1'
+hydr: "2"
+inic: "1"
+rech: "1"
+arrival_time_viz: "arrival_time.png"
+break_through_curve_viz: "break_through_curve.png"
+ground_water_flow_field_viz: "groundwaterflowfield.png"
