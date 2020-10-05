@@ -1,0 +1,29 @@
+name: pyclass
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - xarray
+  - requests
+  - pandas
+  - python-dateutil
+  - xlrd
+  - gdal
+  - geopandas
+  - rtree
+  - descartes
+  - shapely
+  - scipy
+  - netcdf4
+  - pyproj>=2.0
+  - rasterio>=1.0
+  - rasterstats
+  - pyshp
+  - flopy
+  - pip
+  - pip:
+    - ipython2cwl
+    - piglet
+    - pyvirtualdisplay
+    - pyvista
