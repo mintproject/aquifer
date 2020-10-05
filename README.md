@@ -5,10 +5,31 @@
 
 Author: Jinwoo Im USC <jinwooim@usc.edu>
 
+## How to run
+
+We use [CWL](https://www.commonwl.org/) to describe and run the model.
+
+
+1. Clone the repo
+
+```bash
+$ git clone https://github.com/mintproject/aquifer.git
+
+```
+2.  Install the `cwltool`
+
+```bash
+$ pip install cwltool
+```
+
+
+
+3. Run
 
 ```bash
 $ cwltool main_ERC.cwl values.yml 
 ```
+
 
 # Citation
 
