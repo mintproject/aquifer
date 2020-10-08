@@ -5,6 +5,7 @@
 
 Author: Jinwoo Im USC <jinwooim@usc.edu>
 
+
 ## How to run
 
 We use [CWL](https://www.commonwl.org/) to describe and run the model.
@@ -29,7 +30,6 @@ $ pip install cwltool
 ```bash
 $ cwltool main_ERC.cwl values.yml 
 ```
-
 
 # Citation
 
