@@ -5,7 +5,7 @@ class: CommandLineTool
 cwlVersion: v1.1
 hints:
   DockerRequirement:
-    dockerImageId: r2d-2ftmp-2frepo2cwl-5f96aeggaq-2frepo1601832874
+    dockerImageId: mintproject/aquifer:v1
 inputs:
   aquifer_file:
     inputBinding:
