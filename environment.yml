@@ -25,5 +25,5 @@ dependencies:
   - pip:
     - ipython2cwl
     - piglet
-    - pyvirtualdisplay
-    - pyvista
+    - pyvirtualdisplay==1.3.2
+    - pyvista==0.26.1
